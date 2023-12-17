@@ -1,0 +1,425 @@
+body{
+    /*배경 이미지*/
+    background-image: url("./image/bg/snowman background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /*그리드 - 달력 날짜*/
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+/*그리드*/
+.grid1 {
+    display: grid;
+    width: 90%;
+    max-width: 710px;
+    margin: 1% auto;
+    z-index: 1;
+  
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+
+    grid-template-areas:
+        "t        t       t"
+        "d18      d19     d20"
+        "d21      d22     d23"
+        "d24      d25     d26"
+        "d27      d28     d29"
+        "d30      d31     d32";
+}
+@media screen and (min-width: 500px){
+    .grid1 {
+        /* 너비를 기준으로 높이를 계산 */
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "t        t      d18      d19      d20"
+        "t        t      d21      d22      d22"
+        "d23     d24     d25      d22      d22"
+        "d26     d26     d27      d28      d29"
+        "d26     d26     d30      d31      d32";
+    }  
+}
+/* flex 속성 */
+.flex-row {
+    display: flex;
+}
+  
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-baseline {
+    align-items: baseline;
+}
+
+.title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    grid-area: t;
+}
+
+.title img {
+    width: 100%;
+    height: auto;
+}
+  
+
+/* 그리드 front 배경 이미지 */
+
+.day18{
+    grid-area: d18;
+    background: url("./image/Frame/Frame18.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day19{
+    grid-area: d19;
+    background: url("./image/Frame/Frame19.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day20{
+    grid-area: d20;
+    background: url("./image/Frame/Frame20.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day21{
+    grid-area: d21;
+    background: url("./image/Frame/Frame21.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day22{
+    grid-area: d22;
+    background: url("./image/Frame/Frame22.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day23{
+    grid-area: d23;
+    background: url("./image/Frame/Frame23.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day24{
+    grid-area: d24;
+    background: url("./image/Frame/Frame24.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day25{
+    grid-area: d25;
+    background: url("./image/Frame/Frame25.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day26{
+    grid-area: d26;
+    background: url("./image/Frame/Frame26.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day27{
+    grid-area: d27;
+    background: url("./image/Frame/Frame27.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day28{
+    grid-area: d28;
+    background: url("./image/Frame/Frame28.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day29{
+    grid-area: d29;
+    background: url("./image/Frame/Frame29.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day30{
+    grid-area: d30;
+    background: url("./image/Frame/Frame30.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day31{
+    grid-area: d31;
+    background: url("./image/Frame/Frame31.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.day32{
+    grid-area: d32;
+    background: url("./image/Frame/Frame32.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* 그리드 back 배경 이미지 */
+.day18 .back {
+    background-image: url("./image/Card/Card18.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day19 .back {
+    background-image: url("./image/Card/Card19.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day20 .back {
+    background-image: url("./image/Card/Card20.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day21 .back {
+    background-image: url("./image/Card/Card21.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day22 .back {
+    background-image: url("./image/Card/Card22.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day23 .back {
+    background-image: url("./image/Card/Card23.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day24 .back {
+    background-image: url("./image/Card/Card24.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day25 .back {
+    background-image: url("./image/Card/Card25.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day26 .back {
+    background-image: url("./image/Card/Card26.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day27 .back {
+    background-image: url("./image/Card/Card27.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day28 .back {
+    background-image: url("./image/Card/Card28.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day29 .back {
+    background-image: url("./image/Card/Card29.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day30 .back {
+    background-image: url("./image/Card/Card30.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.day31 .back {
+    background-image: url("./image/Card/Card31.png");
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+.day32 .back {
+    background-image: url("./image/Card/Card32.png");
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+/* rotate styles */
+.grid1 input {
+    display: none;
+}
+
+label {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    height: 120px;
+}
+/* frame 앞면*/
+.rotate{
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 300ms;
+    border-radius: 10px;
+    transform: rotateY(0deg);
+    
+}
+.date-num {
+    position: absolute; /* 따로 움직일 수 있게 된다. 분리되는 성격 */
+    top: 10px;
+    left: 12px;
+    color: white;
+}
+/*frame 뒷면*/
+.rotate div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+/*frame 뒤집기*/
+.rotate .back{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+}
+/*:checked는 가상 클래스 요소가 선택 상태일 때 적용하는 선택자
+:checked + .rotate {
+    transform: rotateY(180deg);
+} */
+
+/*카드 줌 및 회전 애니메이션 만들기*/
+@keyframes zoomRotate{
+    from{
+        transform: scale(0) rotateY(0deg);
+    }
+    to{
+        transform: scale(1) rotateY(360deg);
+    }
+}
+/*카드에 애니메이션 적용하기*/
+.zoomIn{
+    animation: zoomRotate 0.5s ease forwards;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column; /*아이템이 세로 방향으로 흐름.*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.modal-content{
+    width: 450px;
+    height: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden; /*hidden에서 scroll로 변경함.*/
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*카드와 텍스트가 합쳐진 완전한 카드를 위한 스타일*/
+.modal-content div{
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.modal-content p{
+    width: 400px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold;
+    font-size: 17px;
+    word-break: keep-all;
+}
+
+#modifyVal{
+    margin-top: 10px;
+    width: 350px;
+    height: 50px;
+}
+
+#inBtn{
+    padding: 20px;
+}
+
+#ok{
+    width: 60px;
+    height: 30px;
+    margin-right: 2px;
+}
+#cancle{
+    width: 60px;
+    height: 30px;
+    margin-left: 2px;
+}
+
+#displayBox{
+    width: 300px;
+    color: purple;
+    margin-top: 10px;
+    margin-bottom: 5;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold;
+    font-size: 17px;
+    word-break: keep-all;
+}
+
+.countdown{
+    font-size: 14px;
+}

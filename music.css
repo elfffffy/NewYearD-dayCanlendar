@@ -1,0 +1,16 @@
+.sound{
+    position: relative;
+    /* font-size: 2rem; */
+    width: 3rem;
+    height: 3rem;
+    /* color: white; */
+    /* text-align: center; */
+    margin: 1rem 1rem 0 0;
+    background-image: url("./image/soundOn.png");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+.off{
+    background-image: url("./image/soundOff.png");
+}

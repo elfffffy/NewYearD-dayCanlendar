@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elfffffy.github.io/NewYearCanlendar/">
+    <meta property="og:title" content="신년 어드벤트 캘린더">
+    <meta property="og:image" content="image/screenImage.png">
+    <meta property="og:description" content="2024년까지 하루가 기다려지는 즐거움, 신년 어드벤트 캘린더와 함께해요!">
+    <meta property="og:site_name" content="2024 Advent Calendar">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <title>신년 어드벤트 캘린더</title>
+    <!--외부 파일로 분리한 경우 <link>태그를 이용해서 html 파일과 연결시킬 것-->
+    <link rel="stylesheet" href="NY.css">
+    <link rel="stylesheet" href="snow.css">
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <!--눈 내리는 효과-->
+    <div class="snow-wrap">
+        <div></div>
+    </div>
+    <!--grid를 이용해서 달력 틀 잡기-->
+    <section class="grid1">
+        <div class ="title flex-col item-baseline">
+            <img src="./image/Title.png">
+                <div class="countdown">2024년까지<span id="countdown" class="countdown"></span>남음</div>
+                <div class="flex-row">
+                    <audio class="bgm" src="./image/bgMusic.mp3" preload="auto" style="display: none" autoplay loop></audio>
+                    <div class="sound"></div>
+                    <div class="sound off"></div>
+                </div>
+            
+        </div>
+        <div class="day18">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">18</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day19">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">19</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day20">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">20</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day21">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">21</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day22">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">22</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day23">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">23</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day24">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">24</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day25">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">25</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day26">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">26</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day27">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">27</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day28">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">28</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day29">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">29</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day30">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">30</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day31">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num">31</span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+        <div class="day32">
+            <label>
+                <input type="checkbox">
+                <div class="rotate">
+                    <div class="front">
+                        <span class="date-num"></span>
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </label>
+        </div>
+    </section>
+    <script src="NY.js"></script>
+    <script src="music.js"></script>
+    <script src="countdown.js"></script>
+</body>
+</html>
