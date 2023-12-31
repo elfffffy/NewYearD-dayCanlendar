@@ -185,7 +185,7 @@ const displayTxtList = [
     {"number" : 29, "displayText": ''},
     {"number" : 30, "displayText": ''},
     {"number" : 31, "displayText": ''},
-    {"number" : 32, "displayText": '★2024★'}
+    {"number" : 32, "displayText": '2024년도 행복하고 건강하기♥'}
 ];
 //localStorage에 저장하기
 function saveItem(list, sc){
